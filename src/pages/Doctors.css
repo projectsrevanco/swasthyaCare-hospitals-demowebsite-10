@@ -1,0 +1,214 @@
+/* Doctors Page Styles */
+.doctors-header {
+  background-color: var(--color-bg-white);
+  padding: 4rem 0 3rem;
+  text-align: center;
+  border-bottom: var(--border-subtle);
+}
+
+.doctors-header h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.doctors-header p {
+  color: var(--color-text-muted);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.filters-section {
+  background-color: var(--color-bg-white);
+  padding: 1.5rem 0;
+  border-bottom: var(--border-subtle);
+  position: sticky;
+  top: 72px; /* Below navbar */
+  z-index: 90;
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-white);
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  min-width: 160px;
+}
+
+/* Detailed Doctor Profile */
+.profile-header {
+  background-color: var(--color-bg-white);
+  padding: 4rem 0;
+  border-bottom: var(--border-subtle);
+}
+
+.profile-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.profile-image-wrapper {
+  flex: 0 0 300px;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-medium);
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-details h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-dark);
+}
+
+.profile-specialty {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.profile-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-main);
+}
+
+.meta-icon {
+  color: var(--color-accent);
+}
+
+.profile-section {
+  margin-bottom: 2rem;
+}
+
+.profile-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary-dark);
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.expertise-tag {
+  background-color: var(--color-bg-alt);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+  border: var(--border-subtle);
+}
+
+.booking-card {
+  background-color: var(--color-bg-white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-medium);
+  border: var(--border-subtle);
+  border-top: 4px solid var(--color-primary);
+  margin-top: -6rem;
+  position: relative;
+  z-index: 10;
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.time-slot {
+  padding: 0.5rem;
+  text-align: center;
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.time-slot:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.time-slot.selected {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+@media (max-width: 992px) {
+  .profile-container {
+    flex-direction: column;
+  }
+  
+  .profile-image-wrapper {
+    flex: none;
+    width: 250px;
+    margin: 0 auto;
+  }
+  
+  .booking-card {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

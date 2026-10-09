@@ -1,0 +1,109 @@
+/* Staff Dashboard Specific Styles */
+.staff-dash-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.staff-stat-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-stat-card-title {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.staff-stat-card-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.queue-mgmt-panel {
+  background: linear-gradient(135deg, var(--color-bg-white) 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.queue-mgmt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.queue-mgmt-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.queue-tokens-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.queue-token-box {
+  text-align: center;
+}
+
+.queue-token-label {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.queue-token-value {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.queue-token-value.active {
+  color: var(--color-accent-dark);
+}
+
+.queue-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.patient-search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg-white);
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.patient-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}

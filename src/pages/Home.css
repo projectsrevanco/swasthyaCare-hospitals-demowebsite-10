@@ -1,0 +1,677 @@
+/* Home Page Styles */
+
+/* 1. Hero Section */
+.hero {
+  background-color: var(--color-bg-white);
+  padding: 4rem 0 6rem;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.hero-trust {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-main);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.hero-trust-icon {
+  color: var(--color-accent);
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-medium);
+  object-fit: cover;
+}
+
+/* 2. Quick Action Cards */
+.quick-actions-section {
+  margin-top: -4rem;
+  position: relative;
+  z-index: 10;
+  padding: 0 1.5rem;
+}
+
+.quick-actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.action-card {
+  background-color: var(--color-bg-white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-medium);
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  border: var(--border-subtle);
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary-light);
+}
+
+.action-icon-wrapper {
+  background-color: rgba(10, 75, 117, 0.05);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+}
+
+.action-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--color-primary-dark);
+}
+
+.action-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* 3. Why Choose Us */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  border: var(--border-subtle);
+  transition: box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-soft);
+}
+
+.feature-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.feature-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-content p {
+  color: var(--color-text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* 4. Medical Services */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: var(--border-subtle);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-content h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-content p {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.service-cta {
+  color: var(--color-primary);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.service-cta:hover {
+  color: var(--color-primary-light);
+}
+
+/* 5. Appointment / Queue Concept */
+.queue-section {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text-light);
+  padding: 5rem 0;
+}
+
+.queue-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.queue-info {
+  flex: 1;
+}
+
+.queue-info h2 {
+  color: var(--color-text-light);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.queue-info p {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.queue-demo {
+  flex: 1;
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  color: var(--color-text-main);
+  box-shadow: var(--shadow-medium);
+  text-align: center;
+}
+
+.queue-status {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.queue-box {
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-alt);
+  min-width: 150px;
+}
+
+.queue-box.active {
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid var(--color-accent);
+}
+
+.queue-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.queue-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+.queue-box.active .queue-number {
+  color: var(--color-accent-dark);
+}
+
+.queue-estimate {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+}
+
+.queue-estimate strong {
+  color: var(--color-primary);
+}
+
+/* 6. Doctors Preview */
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.doctor-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  border: var(--border-subtle);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+}
+
+.doctor-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.doctor-info {
+  padding: 1.5rem;
+}
+
+.doctor-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.doctor-specialty {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.doctor-exp {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.doctor-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+/* 7. Health Packages */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.package-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-soft);
+  border: var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary-light);
+}
+
+.package-title {
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.package-desc {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.package-tests {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  flex: 1;
+}
+
+.package-tests li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+.test-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.package-price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.price-currency {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+}
+
+/* 8. Diagnostics */
+.diagnostics-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.diagnostics-info {
+  flex: 1;
+}
+
+.diagnostics-demo {
+  flex: 1;
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-medium);
+  border: var(--border-subtle);
+}
+
+.report-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  background-color: var(--color-bg-alt);
+}
+
+.report-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.report-info p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.report-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-ready {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--color-accent-dark);
+}
+
+/* 9. Patient Follow-Up */
+.followup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.followup-card {
+  background-color: var(--color-bg-white);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: var(--border-subtle);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.followup-icon-wrapper {
+  background-color: rgba(14, 165, 233, 0.1);
+  color: var(--color-secondary);
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.followup-content h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.05rem;
+}
+
+.followup-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* 10. Testimonials */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: var(--color-bg-white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+}
+
+.quote-icon {
+  color: rgba(10, 75, 117, 0.1);
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.testimonial-text {
+  font-style: italic;
+  color: var(--color-text-main);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-light);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.author-info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.author-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* 11. Health Tips */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tip-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+  transform: translateY(-4px);
+}
+
+.tip-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.tip-content {
+  padding: 1.5rem;
+}
+
+.tip-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.tip-content p {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero-container,
+  .queue-container,
+  .diagnostics-container {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .hero-trust {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+  }
+  
+  .queue-status {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .quick-actions-section {
+    margin-top: -2rem;
+  }
+}
